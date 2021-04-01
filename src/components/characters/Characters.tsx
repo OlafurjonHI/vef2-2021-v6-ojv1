@@ -7,9 +7,6 @@ import s from './Characters.module.scss';
 import { Button } from '../button/Button';
 import { ICharacter } from '../../types';
 
-type Props = {
-};
-
 /**
  * Hjálpar týpa ef við erum að filtera burt hugsanleg null gildi:
  *
@@ -23,7 +20,7 @@ type Props = {
  *  .filter((Boolean as unknown) as ExcludesFalse);
  * items verður Array<T> en ekki Array<T | null>
  */
-//type ExcludesFalse = <T>(x: T | null | undefined | false) => x is T;
+// type ExcludesFalse = <T>(x: T | null | undefined | false) => x is T;
 
 export function Characters(): JSX.Element {
   const [loading, setLoading] = useState<boolean>(false);

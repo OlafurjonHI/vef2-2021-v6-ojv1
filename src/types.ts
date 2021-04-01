@@ -1,6 +1,7 @@
 // Hér eru þær týpur sem við skilgreinum á móti GraphQL endapunkti
 
 export interface ICharacter {
+  person: null;
   id: string;
   name?: string;
   birthYear?: string;
@@ -18,7 +19,7 @@ export interface IPeopleResponse {
 }
 
 export interface IAllFilms {
-  allFilms: Response;
+  allFilms: any;
   films: Array<IFilm>;
 
 }
