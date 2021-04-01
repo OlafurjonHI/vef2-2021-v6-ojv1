@@ -1,0 +1,21 @@
+@import '../../styles/config';
+
+.layout {
+  a {
+    margin-right: 1em;
+  }
+  &__header {
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__listItem {
+    &:first-child {
+      margin-right: 1rem;
+    }
+  }
+}
