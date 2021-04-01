@@ -10,7 +10,6 @@ export function Person({ person }: Props): JSX.Element {
   return (
     <div className={s.person}>
       <h1>{person.name}</h1>
-      <Link href="/characters">Back to characters</Link>
       <ul className={s.person__list}>
         <li><strong>Birth year</strong></li>
         <li>{person.birthYear}</li>
@@ -23,6 +22,7 @@ export function Person({ person }: Props): JSX.Element {
         <li><strong>Mass</strong></li>
         <li>{person.mass} kg</li>
       </ul>
+      <Link href="/characters">Back to characters</Link>
     </div>
   );
 }
